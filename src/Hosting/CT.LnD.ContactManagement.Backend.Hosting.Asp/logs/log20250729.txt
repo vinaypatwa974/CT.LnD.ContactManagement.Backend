@@ -1,0 +1,535 @@
+2025-07-29 10:18:39.333 +05:30 [INF] User profile is available. Using 'C:\Users\AbhinavArora\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-29 10:18:39.518 +05:30 [INF] Now listening on: http://localhost:5047
+2025-07-29 10:18:39.593 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-29 10:18:39.595 +05:30 [INF] Hosting environment: Development
+2025-07-29 10:18:39.597 +05:30 [INF] Content root path: C:\LnD.Abhinav.HRM5724.Backend\CT.LnD.ContactManagement.Backend\src\Hosting\CT.LnD.ContactManagement.Backend.Hosting.Asp
+2025-07-29 10:18:39.959 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5047/index.html - null null
+2025-07-29 10:18:40.189 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5047/index.html - 200 null text/html;charset=utf-8 231.0967ms
+2025-07-29 10:18:40.222 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5047/_vs/browserLink - null null
+2025-07-29 10:18:40.227 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5047/_framework/aspnetcore-browser-refresh.js - null null
+2025-07-29 10:18:40.234 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5047/_framework/aspnetcore-browser-refresh.js - 200 16573 application/javascript; charset=utf-8 7.0197ms
+2025-07-29 10:18:40.265 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5047/_vs/browserLink - 200 null text/javascript; charset=UTF-8 43.2908ms
+2025-07-29 10:18:40.342 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5047/swagger/v1/swagger.json - null null
+2025-07-29 10:18:40.421 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5047/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 78.2645ms
+2025-07-29 10:18:48.152 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5047/login - application/json 65
+2025-07-29 10:18:48.222 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-07-29 10:18:48.229 +05:30 [INF] Executing endpoint 'CT.LnD.ContactManagement.Backend.Hosting.Asp.Controllers.UserController.LoginUser (CT.LnD.ContactManagement.Backend.Hosting.Asp)'
+2025-07-29 10:18:48.269 +05:30 [INF] Route matched with {action = "LoginUser", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] LoginUser(CT.LnD.ContactManagement.Backend.Dto.Hosting.UserLoginRequest) on controller CT.LnD.ContactManagement.Backend.Hosting.Asp.Controllers.UserController (CT.LnD.ContactManagement.Backend.Hosting.Asp).
+2025-07-29 10:18:49.792 +05:30 [WRN] The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2025-07-29 10:18:50.875 +05:30 [INF] Executed DbCommand (72ms) [Parameters=[p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedAt], [c].[Email], [c].[FirstName], [c].[LastLogin], [c].[LastName], [c].[Password], [c].[RoleId], [c].[StatusId]
+FROM (
+    SELECT * FROM Users WHERE Email = @p0
+) AS [c]
+2025-07-29 10:18:50.942 +05:30 [ERR] Failed to login user
+2025-07-29 10:18:50.944 +05:30 [ERR] No user found !
+2025-07-29 10:18:50.956 +05:30 [INF] Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType3`3[[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-29 10:18:50.975 +05:30 [INF] Executed action CT.LnD.ContactManagement.Backend.Hosting.Asp.Controllers.UserController.LoginUser (CT.LnD.ContactManagement.Backend.Hosting.Asp) in 2694.1977ms
+2025-07-29 10:18:50.988 +05:30 [INF] Executed endpoint 'CT.LnD.ContactManagement.Backend.Hosting.Asp.Controllers.UserController.LoginUser (CT.LnD.ContactManagement.Backend.Hosting.Asp)'
+2025-07-29 10:18:51.006 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5047/login - 400 null application/json; charset=utf-8 2853.6768ms
+2025-07-29 10:19:33.851 +05:30 [INF] User profile is available. Using 'C:\Users\AbhinavArora\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-29 10:19:34.550 +05:30 [INF] Now listening on: http://localhost:5047
+2025-07-29 10:19:34.673 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-29 10:19:34.675 +05:30 [INF] Hosting environment: Development
+2025-07-29 10:19:34.678 +05:30 [INF] Content root path: C:\LnD.Abhinav.HRM5724.Backend\CT.LnD.ContactManagement.Backend\src\Hosting\CT.LnD.ContactManagement.Backend.Hosting.Asp
+2025-07-29 10:19:35.187 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5047/index.html - null null
+2025-07-29 10:19:35.647 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5047/index.html - 200 null text/html;charset=utf-8 462.1033ms
+2025-07-29 10:19:35.782 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5047/_framework/aspnetcore-browser-refresh.js - null null
+2025-07-29 10:19:35.782 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5047/_vs/browserLink - null null
+2025-07-29 10:19:35.793 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5047/_framework/aspnetcore-browser-refresh.js - 200 16573 application/javascript; charset=utf-8 11.6689ms
+2025-07-29 10:19:35.852 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5047/_vs/browserLink - 200 null text/javascript; charset=UTF-8 70.493ms
+2025-07-29 10:19:36.278 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5047/swagger/v1/swagger.json - null null
+2025-07-29 10:19:36.542 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5047/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 262.8042ms
+2025-07-29 10:28:53.303 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5047/login - application/json 72
+2025-07-29 10:28:53.482 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-07-29 10:28:53.487 +05:30 [INF] Executing endpoint 'CT.LnD.ContactManagement.Backend.Hosting.Asp.Controllers.UserController.LoginUser (CT.LnD.ContactManagement.Backend.Hosting.Asp)'
+2025-07-29 10:28:53.546 +05:30 [INF] Route matched with {action = "LoginUser", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] LoginUser(CT.LnD.ContactManagement.Backend.Dto.Hosting.UserLoginRequest) on controller CT.LnD.ContactManagement.Backend.Hosting.Asp.Controllers.UserController (CT.LnD.ContactManagement.Backend.Hosting.Asp).
+2025-07-29 10:28:54.567 +05:30 [WRN] The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2025-07-29 10:28:56.680 +05:30 [INF] Executed DbCommand (47ms) [Parameters=[p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedAt], [c].[Email], [c].[FirstName], [c].[LastLogin], [c].[LastName], [c].[Password], [c].[RoleId], [c].[StatusId]
+FROM (
+    SELECT * FROM Users WHERE Email = @p0
+) AS [c]
+2025-07-29 10:28:56.739 +05:30 [ERR] Failed to login user
+2025-07-29 10:28:56.742 +05:30 [ERR] No user found !
+2025-07-29 10:28:56.750 +05:30 [INF] Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType3`3[[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-29 10:28:56.766 +05:30 [INF] Executed action CT.LnD.ContactManagement.Backend.Hosting.Asp.Controllers.UserController.LoginUser (CT.LnD.ContactManagement.Backend.Hosting.Asp) in 3211.0131ms
+2025-07-29 10:28:56.770 +05:30 [INF] Executed endpoint 'CT.LnD.ContactManagement.Backend.Hosting.Asp.Controllers.UserController.LoginUser (CT.LnD.ContactManagement.Backend.Hosting.Asp)'
+2025-07-29 10:28:56.783 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5047/login - 400 null application/json; charset=utf-8 3484.6832ms
+2025-07-29 10:29:02.817 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5047/login - application/json 73
+2025-07-29 10:29:02.824 +05:30 [INF] Executing endpoint 'CT.LnD.ContactManagement.Backend.Hosting.Asp.Controllers.UserController.LoginUser (CT.LnD.ContactManagement.Backend.Hosting.Asp)'
+2025-07-29 10:29:02.828 +05:30 [INF] Route matched with {action = "LoginUser", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] LoginUser(CT.LnD.ContactManagement.Backend.Dto.Hosting.UserLoginRequest) on controller CT.LnD.ContactManagement.Backend.Hosting.Asp.Controllers.UserController (CT.LnD.ContactManagement.Backend.Hosting.Asp).
+2025-07-29 10:29:02.852 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedAt], [c].[Email], [c].[FirstName], [c].[LastLogin], [c].[LastName], [c].[Password], [c].[RoleId], [c].[StatusId]
+FROM (
+    SELECT * FROM Users WHERE Email = @p0
+) AS [c]
+2025-07-29 10:29:02.925 +05:30 [WRN] The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2025-07-29 10:29:02.937 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[RoleName]
+FROM (
+    SELECT * FROM Roles WHERE Id = @p0
+) AS [c]
+2025-07-29 10:29:02.956 +05:30 [WRN] The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2025-07-29 10:29:02.966 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[StatusName]
+FROM (
+    SELECT * FROM Statuses WHERE Id = @p0
+) AS [c]
+2025-07-29 10:29:02.993 +05:30 [INF] Executed DbCommand (13ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+UPDATE Users SET LastLogin = @p0 WHERE Id = @p1
+2025-07-29 10:29:03.021 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType8`4[[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[CT.LnD.ContactManagement.Backend.Dto.Hosting.GetUserResponse, CT.LnD.ContactManagement.Backend.Dto, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-29 10:29:03.026 +05:30 [INF] Executed action CT.LnD.ContactManagement.Backend.Hosting.Asp.Controllers.UserController.LoginUser (CT.LnD.ContactManagement.Backend.Hosting.Asp) in 195.7516ms
+2025-07-29 10:29:03.029 +05:30 [INF] Executed endpoint 'CT.LnD.ContactManagement.Backend.Hosting.Asp.Controllers.UserController.LoginUser (CT.LnD.ContactManagement.Backend.Hosting.Asp)'
+2025-07-29 10:29:03.032 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5047/login - 200 null application/json; charset=utf-8 215.4739ms
+2025-07-29 10:29:36.021 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5047/contacts/export?userId=16 - null null
+2025-07-29 10:29:36.096 +05:30 [INF] Executing endpoint 'CT.LnD.ContactManagement.Backend.Hosting.Asp.Controllers.ContactController.ExportContacts (CT.LnD.ContactManagement.Backend.Hosting.Asp)'
+2025-07-29 10:29:36.103 +05:30 [INF] Route matched with {action = "ExportContacts", controller = "Contact"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CT.LnD.ContactManagement.Backend.DataAccess.Database.Dtos.ContactResponse]] ExportContacts(System.String) on controller CT.LnD.ContactManagement.Backend.Hosting.Asp.Controllers.ContactController (CT.LnD.ContactManagement.Backend.Hosting.Asp).
+2025-07-29 10:29:36.349 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT * FROM Contacts WHERE UserId = @p0 And Id NOT IN (SELECT ContactId AS Id From DeletedContacts)
+2025-07-29 10:29:36.374 +05:30 [WRN] The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2025-07-29 10:29:36.387 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Avatar], [c].[Company], [c].[FirstName], [c].[LastName], [c].[Notes], [c].[Tags], [c].[UserId]
+FROM (
+
+                SELECT * FROM Contacts 
+                WHERE Id = @p0 
+                AND Id NOT IN (SELECT ContactId FROM DeletedContacts)
+) AS [c]
+2025-07-29 10:29:36.401 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT * FROM EmailAddresses WHERE ContactId = @p0
+2025-07-29 10:29:36.415 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT * FROM PhoneNumbers WHERE ContactId = @p0
+2025-07-29 10:29:36.438 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT * FROM PhysicalAddresses WHERE ContactId = @p0
+2025-07-29 10:29:36.442 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Avatar], [c].[Company], [c].[FirstName], [c].[LastName], [c].[Notes], [c].[Tags], [c].[UserId]
+FROM (
+
+                SELECT * FROM Contacts 
+                WHERE Id = @p0 
+                AND Id NOT IN (SELECT ContactId FROM DeletedContacts)
+) AS [c]
+2025-07-29 10:29:36.447 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT * FROM EmailAddresses WHERE ContactId = @p0
+2025-07-29 10:29:36.453 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT * FROM PhoneNumbers WHERE ContactId = @p0
+2025-07-29 10:29:36.458 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT * FROM PhysicalAddresses WHERE ContactId = @p0
+2025-07-29 10:29:36.463 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Avatar], [c].[Company], [c].[FirstName], [c].[LastName], [c].[Notes], [c].[Tags], [c].[UserId]
+FROM (
+
+                SELECT * FROM Contacts 
+                WHERE Id = @p0 
+                AND Id NOT IN (SELECT ContactId FROM DeletedContacts)
+) AS [c]
+2025-07-29 10:29:36.468 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT * FROM EmailAddresses WHERE ContactId = @p0
+2025-07-29 10:29:36.473 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT * FROM PhoneNumbers WHERE ContactId = @p0
+2025-07-29 10:29:36.476 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT * FROM PhysicalAddresses WHERE ContactId = @p0
+2025-07-29 10:29:36.479 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Avatar], [c].[Company], [c].[FirstName], [c].[LastName], [c].[Notes], [c].[Tags], [c].[UserId]
+FROM (
+
+                SELECT * FROM Contacts 
+                WHERE Id = @p0 
+                AND Id NOT IN (SELECT ContactId FROM DeletedContacts)
+) AS [c]
+2025-07-29 10:29:36.482 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT * FROM EmailAddresses WHERE ContactId = @p0
+2025-07-29 10:29:36.485 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT * FROM PhoneNumbers WHERE ContactId = @p0
+2025-07-29 10:29:36.489 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT * FROM PhysicalAddresses WHERE ContactId = @p0
+2025-07-29 10:29:36.493 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Avatar], [c].[Company], [c].[FirstName], [c].[LastName], [c].[Notes], [c].[Tags], [c].[UserId]
+FROM (
+
+                SELECT * FROM Contacts 
+                WHERE Id = @p0 
+                AND Id NOT IN (SELECT ContactId FROM DeletedContacts)
+) AS [c]
+2025-07-29 10:29:36.497 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT * FROM EmailAddresses WHERE ContactId = @p0
+2025-07-29 10:29:36.501 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT * FROM PhoneNumbers WHERE ContactId = @p0
+2025-07-29 10:29:36.504 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT * FROM PhysicalAddresses WHERE ContactId = @p0
+2025-07-29 10:29:36.507 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Avatar], [c].[Company], [c].[FirstName], [c].[LastName], [c].[Notes], [c].[Tags], [c].[UserId]
+FROM (
+
+                SELECT * FROM Contacts 
+                WHERE Id = @p0 
+                AND Id NOT IN (SELECT ContactId FROM DeletedContacts)
+) AS [c]
+2025-07-29 10:29:36.512 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT * FROM EmailAddresses WHERE ContactId = @p0
+2025-07-29 10:29:36.516 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT * FROM PhoneNumbers WHERE ContactId = @p0
+2025-07-29 10:29:36.519 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT * FROM PhysicalAddresses WHERE ContactId = @p0
+2025-07-29 10:29:36.522 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Avatar], [c].[Company], [c].[FirstName], [c].[LastName], [c].[Notes], [c].[Tags], [c].[UserId]
+FROM (
+
+                SELECT * FROM Contacts 
+                WHERE Id = @p0 
+                AND Id NOT IN (SELECT ContactId FROM DeletedContacts)
+) AS [c]
+2025-07-29 10:29:36.525 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT * FROM EmailAddresses WHERE ContactId = @p0
+2025-07-29 10:29:36.530 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT * FROM PhoneNumbers WHERE ContactId = @p0
+2025-07-29 10:29:36.535 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT * FROM PhysicalAddresses WHERE ContactId = @p0
+2025-07-29 10:29:36.539 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Avatar], [c].[Company], [c].[FirstName], [c].[LastName], [c].[Notes], [c].[Tags], [c].[UserId]
+FROM (
+
+                SELECT * FROM Contacts 
+                WHERE Id = @p0 
+                AND Id NOT IN (SELECT ContactId FROM DeletedContacts)
+) AS [c]
+2025-07-29 10:29:36.543 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT * FROM EmailAddresses WHERE ContactId = @p0
+2025-07-29 10:29:36.546 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT * FROM PhoneNumbers WHERE ContactId = @p0
+2025-07-29 10:29:36.549 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT * FROM PhysicalAddresses WHERE ContactId = @p0
+2025-07-29 10:29:36.560 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Avatar], [c].[Company], [c].[FirstName], [c].[LastName], [c].[Notes], [c].[Tags], [c].[UserId]
+FROM (
+
+                SELECT * FROM Contacts 
+                WHERE Id = @p0 
+                AND Id NOT IN (SELECT ContactId FROM DeletedContacts)
+) AS [c]
+2025-07-29 10:29:36.564 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT * FROM EmailAddresses WHERE ContactId = @p0
+2025-07-29 10:29:36.574 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT * FROM PhoneNumbers WHERE ContactId = @p0
+2025-07-29 10:29:36.580 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT * FROM PhysicalAddresses WHERE ContactId = @p0
+2025-07-29 10:29:36.585 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Avatar], [c].[Company], [c].[FirstName], [c].[LastName], [c].[Notes], [c].[Tags], [c].[UserId]
+FROM (
+
+                SELECT * FROM Contacts 
+                WHERE Id = @p0 
+                AND Id NOT IN (SELECT ContactId FROM DeletedContacts)
+) AS [c]
+2025-07-29 10:29:36.590 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT * FROM EmailAddresses WHERE ContactId = @p0
+2025-07-29 10:29:36.595 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT * FROM PhoneNumbers WHERE ContactId = @p0
+2025-07-29 10:29:36.598 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT * FROM PhysicalAddresses WHERE ContactId = @p0
+2025-07-29 10:29:36.602 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Avatar], [c].[Company], [c].[FirstName], [c].[LastName], [c].[Notes], [c].[Tags], [c].[UserId]
+FROM (
+
+                SELECT * FROM Contacts 
+                WHERE Id = @p0 
+                AND Id NOT IN (SELECT ContactId FROM DeletedContacts)
+) AS [c]
+2025-07-29 10:29:36.607 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT * FROM EmailAddresses WHERE ContactId = @p0
+2025-07-29 10:29:36.611 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT * FROM PhoneNumbers WHERE ContactId = @p0
+2025-07-29 10:29:36.616 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT * FROM PhysicalAddresses WHERE ContactId = @p0
+2025-07-29 10:29:36.621 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Avatar], [c].[Company], [c].[FirstName], [c].[LastName], [c].[Notes], [c].[Tags], [c].[UserId]
+FROM (
+
+                SELECT * FROM Contacts 
+                WHERE Id = @p0 
+                AND Id NOT IN (SELECT ContactId FROM DeletedContacts)
+) AS [c]
+2025-07-29 10:29:36.626 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT * FROM EmailAddresses WHERE ContactId = @p0
+2025-07-29 10:29:36.631 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT * FROM PhoneNumbers WHERE ContactId = @p0
+2025-07-29 10:29:36.635 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT * FROM PhysicalAddresses WHERE ContactId = @p0
+2025-07-29 10:29:36.638 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Avatar], [c].[Company], [c].[FirstName], [c].[LastName], [c].[Notes], [c].[Tags], [c].[UserId]
+FROM (
+
+                SELECT * FROM Contacts 
+                WHERE Id = @p0 
+                AND Id NOT IN (SELECT ContactId FROM DeletedContacts)
+) AS [c]
+2025-07-29 10:29:36.642 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT * FROM EmailAddresses WHERE ContactId = @p0
+2025-07-29 10:29:36.644 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT * FROM PhoneNumbers WHERE ContactId = @p0
+2025-07-29 10:29:36.647 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT * FROM PhysicalAddresses WHERE ContactId = @p0
+2025-07-29 10:29:36.650 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Avatar], [c].[Company], [c].[FirstName], [c].[LastName], [c].[Notes], [c].[Tags], [c].[UserId]
+FROM (
+
+                SELECT * FROM Contacts 
+                WHERE Id = @p0 
+                AND Id NOT IN (SELECT ContactId FROM DeletedContacts)
+) AS [c]
+2025-07-29 10:29:36.653 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT * FROM EmailAddresses WHERE ContactId = @p0
+2025-07-29 10:29:36.657 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT * FROM PhoneNumbers WHERE ContactId = @p0
+2025-07-29 10:29:36.660 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT * FROM PhysicalAddresses WHERE ContactId = @p0
+2025-07-29 10:29:37.810 +05:30 [WRN] The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2025-07-29 10:29:37.825 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedAt], [c].[Email], [c].[FirstName], [c].[LastLogin], [c].[LastName], [c].[Password], [c].[RoleId], [c].[StatusId]
+FROM (
+    SELECT * FROM Users WHERE Id = @p0
+) AS [c]
+2025-07-29 10:29:37.833 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[RoleName]
+FROM (
+    SELECT * FROM Roles WHERE Id = @p0
+) AS [c]
+2025-07-29 10:29:37.839 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[StatusName]
+FROM (
+    SELECT * FROM Statuses WHERE Id = @p0
+) AS [c]
+2025-07-29 10:29:41.752 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-29 10:29:41.755 +05:30 [INF] Executed action CT.LnD.ContactManagement.Backend.Hosting.Asp.Controllers.ContactController.ExportContacts (CT.LnD.ContactManagement.Backend.Hosting.Asp) in 5648.9287ms
+2025-07-29 10:29:41.757 +05:30 [INF] Executed endpoint 'CT.LnD.ContactManagement.Backend.Hosting.Asp.Controllers.ContactController.ExportContacts (CT.LnD.ContactManagement.Backend.Hosting.Asp)'
+2025-07-29 10:29:41.760 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5047/contacts/export?userId=16 - 200 null application/json; charset=utf-8 5738.9674ms
+2025-07-29 10:30:32.834 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5047/contacts?Id=16&Filter=10&PageNumber=1 - null null
+2025-07-29 10:30:32.843 +05:30 [INF] Executing endpoint 'CT.LnD.ContactManagement.Backend.Hosting.Asp.Controllers.ContactController.GetAllContacts (CT.LnD.ContactManagement.Backend.Hosting.Asp)'
+2025-07-29 10:30:32.850 +05:30 [INF] Route matched with {action = "GetAllContacts", controller = "Contact"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[CT.LnD.ContactManagement.Backend.DataAccess.Database.Models.Contact]]] GetAllContacts(CT.LnD.ContactManagement.Backend.Dto.Hosting.GetAllContactsRequest) on controller CT.LnD.ContactManagement.Backend.Hosting.Asp.Controllers.ContactController (CT.LnD.ContactManagement.Backend.Hosting.Asp).
+2025-07-29 10:30:32.874 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[p0='?' (Size = 4000), p1='?' (DbType = Int32), p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+
+            SELECT * FROM Contacts 
+            WHERE UserId = @p0 
+            AND Id NOT IN (SELECT ContactId FROM DeletedContacts) 
+            ORDER BY Id OFFSET @p1 ROW FETCH NEXT @p2 ROWS ONLY
+2025-07-29 10:30:32.879 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`3[[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[CT.LnD.ContactManagement.Backend.DataAccess.Database.Models.Contact, CT.LnD.ContactManagement.Backend.DataAccess.Database, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-29 10:30:32.884 +05:30 [INF] Executed action CT.LnD.ContactManagement.Backend.Hosting.Asp.Controllers.ContactController.GetAllContacts (CT.LnD.ContactManagement.Backend.Hosting.Asp) in 29.8853ms
+2025-07-29 10:30:32.887 +05:30 [INF] Executed endpoint 'CT.LnD.ContactManagement.Backend.Hosting.Asp.Controllers.ContactController.GetAllContacts (CT.LnD.ContactManagement.Backend.Hosting.Asp)'
+2025-07-29 10:30:32.889 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5047/contacts?Id=16&Filter=10&PageNumber=1 - 200 null application/json; charset=utf-8 55.2498ms
+2025-07-29 10:30:56.804 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5047/upload/image?contactId=263 - multipart/form-data; boundary=----WebKitFormBoundaryQwqIRHzbnAk467NM 134841
+2025-07-29 10:30:56.816 +05:30 [INF] Executing endpoint 'CT.LnD.ContactManagement.Backend.Hosting.Asp.Controllers.FileUploadController.UploadImage (CT.LnD.ContactManagement.Backend.Hosting.Asp)'
+2025-07-29 10:30:56.828 +05:30 [INF] Route matched with {action = "UploadImage", controller = "FileUpload"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] UploadImage(CT.LnD.ContactManagement.Backend.Hosting.Asp.Dtos.FileUploadRequest, System.String) on controller CT.LnD.ContactManagement.Backend.Hosting.Asp.Controllers.FileUploadController (CT.LnD.ContactManagement.Backend.Hosting.Asp).
+2025-07-29 10:30:58.419 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Avatar], [c].[Company], [c].[FirstName], [c].[LastName], [c].[Notes], [c].[Tags], [c].[UserId]
+FROM (
+
+                SELECT * FROM Contacts 
+                WHERE Id = @p0 
+                AND Id NOT IN (SELECT ContactId FROM DeletedContacts)
+) AS [c]
+2025-07-29 10:30:58.428 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+UPDATE Contacts SET Avatar = @p0 WHERE Id = @p1
+2025-07-29 10:30:58.436 +05:30 [WRN] The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2025-07-29 10:30:58.450 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Avatar], [c].[Company], [c].[FirstName], [c].[LastName], [c].[Notes], [c].[Tags], [c].[UserId]
+FROM (
+
+                SELECT * FROM Contacts 
+                WHERE Id = @p0 
+                AND Id NOT IN (SELECT ContactId FROM DeletedContacts)
+) AS [c]
+2025-07-29 10:30:58.456 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT * FROM EmailAddresses WHERE ContactId = @p0
+2025-07-29 10:30:58.463 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT * FROM PhoneNumbers WHERE ContactId = @p0
+2025-07-29 10:30:58.470 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT * FROM PhysicalAddresses WHERE ContactId = @p0
+2025-07-29 10:30:58.475 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType4`3[[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[CT.LnD.ContactManagement.Backend.DataAccess.Database.Dtos.ContactResponse, CT.LnD.ContactManagement.Backend.DataAccess.Database, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-29 10:30:58.479 +05:30 [INF] Executed action CT.LnD.ContactManagement.Backend.Hosting.Asp.Controllers.FileUploadController.UploadImage (CT.LnD.ContactManagement.Backend.Hosting.Asp) in 1646.7132ms
+2025-07-29 10:30:58.481 +05:30 [INF] Executed endpoint 'CT.LnD.ContactManagement.Backend.Hosting.Asp.Controllers.FileUploadController.UploadImage (CT.LnD.ContactManagement.Backend.Hosting.Asp)'
+2025-07-29 10:30:58.486 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5047/upload/image?contactId=263 - 200 null application/json; charset=utf-8 1681.697ms
+2025-07-29 10:31:58.709 +05:30 [INF] Application is shutting down...
+2025-07-29 12:09:22.448 +05:30 [INF] User profile is available. Using 'C:\Users\AbhinavArora\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-29 12:09:22.789 +05:30 [INF] Now listening on: http://localhost:5047
+2025-07-29 12:09:22.883 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-29 12:09:22.886 +05:30 [INF] Hosting environment: Development
+2025-07-29 12:09:22.888 +05:30 [INF] Content root path: C:\LnD.Abhinav.HRM5724.Backend\CT.LnD.ContactManagement.Backend\src\Hosting\CT.LnD.ContactManagement.Backend.Hosting.Asp
+2025-07-29 12:09:23.544 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5047/health - null null
+2025-07-29 12:09:23.835 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-07-29 12:09:23.841 +05:30 [INF] Executing endpoint 'HTTP: GET /health'
+2025-07-29 12:09:23.855 +05:30 [INF] Setting HTTP status code 200.
+2025-07-29 12:09:23.861 +05:30 [INF] Writing value of type '<>f__AnonymousType0`2' as Json.
+2025-07-29 12:09:23.878 +05:30 [INF] Executed endpoint 'HTTP: GET /health'
+2025-07-29 12:09:23.883 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5047/health - 200 null application/json; charset=utf-8 342.1077ms
+2025-07-29 12:09:40.072 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5047/index.html - null null
+2025-07-29 12:09:40.177 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5047/index.html - 200 null text/html;charset=utf-8 105.8413ms
+2025-07-29 12:09:40.241 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5047/_framework/aspnetcore-browser-refresh.js - null null
+2025-07-29 12:09:40.241 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5047/_vs/browserLink - null null
+2025-07-29 12:09:40.249 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5047/_framework/aspnetcore-browser-refresh.js - 200 16573 application/javascript; charset=utf-8 8.3399ms
+2025-07-29 12:09:40.320 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5047/_vs/browserLink - 200 null text/javascript; charset=UTF-8 78.6714ms
+2025-07-29 12:09:40.732 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5047/swagger/v1/swagger.json - null null
+2025-07-29 12:09:40.919 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5047/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 186.8095ms
+2025-07-29 12:36:46.733 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5047/_framework/aspnetcore-browser-refresh.js - null null
+2025-07-29 12:36:46.733 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5047/_vs/browserLink - null null
+2025-07-29 12:36:46.824 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5047/_framework/aspnetcore-browser-refresh.js - 200 16573 application/javascript; charset=utf-8 105.2909ms
+2025-07-29 12:36:46.914 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5047/_vs/browserLink - 200 null text/javascript; charset=UTF-8 202.7324ms
+2025-07-29 12:36:47.076 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5047/swagger/v1/swagger.json - null null
+2025-07-29 12:36:47.452 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5047/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 375.7511ms
+2025-07-29 13:12:22.857 +05:30 [INF] User profile is available. Using 'C:\Users\AbhinavArora\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-29 13:12:23.064 +05:30 [INF] Initialized Scheduler Signaller of type: Quartz.Core.SchedulerSignalerImpl
+2025-07-29 13:12:23.067 +05:30 [INF] Quartz Scheduler created
+2025-07-29 13:12:23.070 +05:30 [INF] JobFactory set to: Quartz.Simpl.MicrosoftDependencyInjectionJobFactory
+2025-07-29 13:12:23.071 +05:30 [INF] RAMJobStore initialized.
+2025-07-29 13:12:23.072 +05:30 [INF] Quartz Scheduler 3.14.0.0 - 'QuartzScheduler' with instanceId 'NON_CLUSTERED' initialized
+2025-07-29 13:12:23.074 +05:30 [INF] Using thread pool 'Quartz.Simpl.DefaultThreadPool', size: 10
+2025-07-29 13:12:23.075 +05:30 [INF] Using job store 'Quartz.Simpl.RAMJobStore', supports persistence: False, clustered: False
+2025-07-29 13:12:23.086 +05:30 [INF] Adding 0 jobs, 0 triggers.
+2025-07-29 13:12:23.257 +05:30 [INF] Now listening on: http://localhost:5047
+2025-07-29 13:12:23.336 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-29 13:12:23.338 +05:30 [INF] Hosting environment: Development
+2025-07-29 13:12:23.340 +05:30 [INF] Content root path: C:\LnD.Abhinav.HRM5724.Backend\CT.LnD.ContactManagement.Backend\src\Hosting\CT.LnD.ContactManagement.Backend.Hosting.Asp
+2025-07-29 13:12:23.342 +05:30 [INF] Scheduler QuartzScheduler_$_NON_CLUSTERED started.
+2025-07-29 13:14:33.161 +05:30 [INF] User profile is available. Using 'C:\Users\AbhinavArora\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-29 13:14:33.409 +05:30 [INF] Initialized Scheduler Signaller of type: Quartz.Core.SchedulerSignalerImpl
+2025-07-29 13:14:33.412 +05:30 [INF] Quartz Scheduler created
+2025-07-29 13:14:33.415 +05:30 [INF] JobFactory set to: Quartz.Simpl.MicrosoftDependencyInjectionJobFactory
+2025-07-29 13:14:33.417 +05:30 [INF] RAMJobStore initialized.
+2025-07-29 13:14:33.419 +05:30 [INF] Quartz Scheduler 3.14.0.0 - 'QuartzScheduler' with instanceId 'NON_CLUSTERED' initialized
+2025-07-29 13:14:33.421 +05:30 [INF] Using thread pool 'Quartz.Simpl.DefaultThreadPool', size: 10
+2025-07-29 13:14:33.423 +05:30 [INF] Using job store 'Quartz.Simpl.RAMJobStore', supports persistence: False, clustered: False
+2025-07-29 13:14:33.439 +05:30 [INF] Adding 0 jobs, 0 triggers.
+2025-07-29 13:14:33.596 +05:30 [INF] Now listening on: http://localhost:5047
+2025-07-29 13:14:33.685 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-29 13:14:33.687 +05:30 [INF] Hosting environment: Development
+2025-07-29 13:14:33.689 +05:30 [INF] Content root path: C:\LnD.Abhinav.HRM5724.Backend\CT.LnD.ContactManagement.Backend\src\Hosting\CT.LnD.ContactManagement.Backend.Hosting.Asp
+2025-07-29 13:14:33.693 +05:30 [INF] Scheduler QuartzScheduler_$_NON_CLUSTERED started.
+2025-07-29 13:15:03.803 +05:30 [INF] User profile is available. Using 'C:\Users\AbhinavArora\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-29 13:15:04.009 +05:30 [INF] Initialized Scheduler Signaller of type: Quartz.Core.SchedulerSignalerImpl
+2025-07-29 13:15:04.012 +05:30 [INF] Quartz Scheduler created
+2025-07-29 13:15:04.015 +05:30 [INF] JobFactory set to: Quartz.Simpl.MicrosoftDependencyInjectionJobFactory
+2025-07-29 13:15:04.018 +05:30 [INF] RAMJobStore initialized.
+2025-07-29 13:15:04.021 +05:30 [INF] Quartz Scheduler 3.14.0.0 - 'QuartzScheduler' with instanceId 'NON_CLUSTERED' initialized
+2025-07-29 13:15:04.024 +05:30 [INF] Using thread pool 'Quartz.Simpl.DefaultThreadPool', size: 10
+2025-07-29 13:15:04.026 +05:30 [INF] Using job store 'Quartz.Simpl.RAMJobStore', supports persistence: False, clustered: False
+2025-07-29 13:15:04.040 +05:30 [INF] Adding 0 jobs, 0 triggers.
+2025-07-29 13:15:04.182 +05:30 [INF] Now listening on: http://localhost:5047
+2025-07-29 13:15:04.267 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-29 13:15:04.269 +05:30 [INF] Hosting environment: Development
+2025-07-29 13:15:04.272 +05:30 [INF] Content root path: C:\LnD.Abhinav.HRM5724.Backend\CT.LnD.ContactManagement.Backend\src\Hosting\CT.LnD.ContactManagement.Backend.Hosting.Asp
+2025-07-29 13:15:04.276 +05:30 [INF] Scheduler QuartzScheduler_$_NON_CLUSTERED started.
+2025-07-29 13:15:16.844 +05:30 [INF] User profile is available. Using 'C:\Users\AbhinavArora\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-29 13:15:17.036 +05:30 [INF] Initialized Scheduler Signaller of type: Quartz.Core.SchedulerSignalerImpl
+2025-07-29 13:15:17.040 +05:30 [INF] Quartz Scheduler created
+2025-07-29 13:15:17.043 +05:30 [INF] JobFactory set to: Quartz.Simpl.MicrosoftDependencyInjectionJobFactory
+2025-07-29 13:15:17.045 +05:30 [INF] RAMJobStore initialized.
+2025-07-29 13:15:17.047 +05:30 [INF] Quartz Scheduler 3.14.0.0 - 'QuartzScheduler' with instanceId 'NON_CLUSTERED' initialized
+2025-07-29 13:15:17.048 +05:30 [INF] Using thread pool 'Quartz.Simpl.DefaultThreadPool', size: 10
+2025-07-29 13:15:17.050 +05:30 [INF] Using job store 'Quartz.Simpl.RAMJobStore', supports persistence: False, clustered: False
+2025-07-29 13:15:17.063 +05:30 [INF] Adding 0 jobs, 0 triggers.
+2025-07-29 13:15:17.167 +05:30 [INF] Now listening on: http://localhost:5047
+2025-07-29 13:15:17.247 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-29 13:15:17.249 +05:30 [INF] Hosting environment: Development
+2025-07-29 13:15:17.251 +05:30 [INF] Content root path: C:\LnD.Abhinav.HRM5724.Backend\CT.LnD.ContactManagement.Backend\src\Hosting\CT.LnD.ContactManagement.Backend.Hosting.Asp
+2025-07-29 13:15:40.289 +05:30 [INF] User profile is available. Using 'C:\Users\AbhinavArora\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-29 13:15:40.503 +05:30 [INF] Initialized Scheduler Signaller of type: Quartz.Core.SchedulerSignalerImpl
+2025-07-29 13:15:40.506 +05:30 [INF] Quartz Scheduler created
+2025-07-29 13:15:40.509 +05:30 [INF] JobFactory set to: Quartz.Simpl.MicrosoftDependencyInjectionJobFactory
+2025-07-29 13:15:40.511 +05:30 [INF] RAMJobStore initialized.
+2025-07-29 13:15:40.513 +05:30 [INF] Quartz Scheduler 3.14.0.0 - 'QuartzScheduler' with instanceId 'NON_CLUSTERED' initialized
+2025-07-29 13:15:40.514 +05:30 [INF] Using thread pool 'Quartz.Simpl.DefaultThreadPool', size: 10
+2025-07-29 13:15:40.516 +05:30 [INF] Using job store 'Quartz.Simpl.RAMJobStore', supports persistence: False, clustered: False
+2025-07-29 13:15:40.530 +05:30 [INF] Adding 0 jobs, 0 triggers.
+2025-07-29 13:15:40.692 +05:30 [INF] Now listening on: http://localhost:5047
+2025-07-29 13:15:40.839 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-29 13:15:40.844 +05:30 [INF] Hosting environment: Development
+2025-07-29 13:15:40.846 +05:30 [INF] Content root path: C:\LnD.Abhinav.HRM5724.Backend\CT.LnD.ContactManagement.Backend\src\Hosting\CT.LnD.ContactManagement.Backend.Hosting.Asp
+2025-07-29 13:15:40.848 +05:30 [INF] Scheduler QuartzScheduler_$_NON_CLUSTERED started.
+2025-07-29 13:16:52.652 +05:30 [INF] User profile is available. Using 'C:\Users\AbhinavArora\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-29 13:16:52.858 +05:30 [INF] Initialized Scheduler Signaller of type: Quartz.Core.SchedulerSignalerImpl
+2025-07-29 13:16:52.860 +05:30 [INF] Quartz Scheduler created
+2025-07-29 13:16:52.862 +05:30 [INF] JobFactory set to: Quartz.Simpl.MicrosoftDependencyInjectionJobFactory
+2025-07-29 13:16:52.864 +05:30 [INF] RAMJobStore initialized.
+2025-07-29 13:16:52.866 +05:30 [INF] Quartz Scheduler 3.14.0.0 - 'QuartzScheduler' with instanceId 'NON_CLUSTERED' initialized
+2025-07-29 13:16:52.868 +05:30 [INF] Using thread pool 'Quartz.Simpl.DefaultThreadPool', size: 10
+2025-07-29 13:16:52.869 +05:30 [INF] Using job store 'Quartz.Simpl.RAMJobStore', supports persistence: False, clustered: False
+2025-07-29 13:16:52.883 +05:30 [INF] Adding 0 jobs, 0 triggers.
+2025-07-29 13:16:53.045 +05:30 [INF] Now listening on: http://localhost:5047
+2025-07-29 13:16:53.144 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-29 13:16:53.147 +05:30 [INF] Hosting environment: Development
+2025-07-29 13:16:53.149 +05:30 [INF] Content root path: C:\LnD.Abhinav.HRM5724.Backend\CT.LnD.ContactManagement.Backend\src\Hosting\CT.LnD.ContactManagement.Backend.Hosting.Asp
+2025-07-29 13:16:53.151 +05:30 [INF] Scheduler QuartzScheduler_$_NON_CLUSTERED started.
+2025-07-29 13:17:19.771 +05:30 [INF] User profile is available. Using 'C:\Users\AbhinavArora\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-29 13:17:20.221 +05:30 [INF] Now listening on: http://localhost:5047
+2025-07-29 13:17:20.413 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5047/health - null null
+2025-07-29 13:17:20.420 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5047/health - null null
+2025-07-29 13:17:20.472 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-29 13:17:20.475 +05:30 [INF] Hosting environment: Development
+2025-07-29 13:17:20.477 +05:30 [INF] Content root path: C:\LnD.Abhinav.HRM5724.Backend\CT.LnD.ContactManagement.Backend\src\Hosting\CT.LnD.ContactManagement.Backend.Hosting.Asp
+2025-07-29 13:17:49.524 +05:30 [INF] User profile is available. Using 'C:\Users\AbhinavArora\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-29 13:17:49.809 +05:30 [INF] Now listening on: http://localhost:5047
+2025-07-29 13:17:49.880 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-29 13:17:49.884 +05:30 [INF] Hosting environment: Development
+2025-07-29 13:17:49.887 +05:30 [INF] Content root path: C:\LnD.Abhinav.HRM5724.Backend\CT.LnD.ContactManagement.Backend\src\Hosting\CT.LnD.ContactManagement.Backend.Hosting.Asp
+2025-07-29 13:19:23.949 +05:30 [INF] User profile is available. Using 'C:\Users\AbhinavArora\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-29 13:19:24.332 +05:30 [INF] Now listening on: http://localhost:5047
+2025-07-29 13:19:24.451 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-29 13:19:24.453 +05:30 [INF] Hosting environment: Development
+2025-07-29 13:19:24.456 +05:30 [INF] Content root path: C:\LnD.Abhinav.HRM5724.Backend\CT.LnD.ContactManagement.Backend\src\Hosting\CT.LnD.ContactManagement.Backend.Hosting.Asp
+2025-07-29 13:21:19.072 +05:30 [INF] User profile is available. Using 'C:\Users\AbhinavArora\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-29 13:21:19.395 +05:30 [INF] Now listening on: http://localhost:5047
+2025-07-29 13:21:19.536 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-29 13:21:19.539 +05:30 [INF] Hosting environment: Development
+2025-07-29 13:21:19.541 +05:30 [INF] Content root path: C:\LnD.Abhinav.HRM5724.Backend\CT.LnD.ContactManagement.Backend\src\Hosting\CT.LnD.ContactManagement.Backend.Hosting.Asp
+2025-07-29 13:23:09.346 +05:30 [INF] User profile is available. Using 'C:\Users\AbhinavArora\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-29 13:23:09.844 +05:30 [INF] Now listening on: http://localhost:5047
+2025-07-29 13:23:09.952 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-29 13:23:09.954 +05:30 [INF] Hosting environment: Development
+2025-07-29 13:23:09.957 +05:30 [INF] Content root path: C:\LnD.Abhinav.HRM5724.Backend\CT.LnD.ContactManagement.Backend\src\Hosting\CT.LnD.ContactManagement.Backend.Hosting.Asp
+2025-07-29 13:23:32.035 +05:30 [INF] User profile is available. Using 'C:\Users\AbhinavArora\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-29 13:23:32.195 +05:30 [INF] Now listening on: http://localhost:5047
+2025-07-29 13:23:32.249 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-29 13:23:32.251 +05:30 [INF] Hosting environment: Development
+2025-07-29 13:23:32.253 +05:30 [INF] Content root path: C:\LnD.Abhinav.HRM5724.Backend\CT.LnD.ContactManagement.Backend\src\Hosting\CT.LnD.ContactManagement.Backend.Hosting.Asp
+2025-07-29 13:24:27.003 +05:30 [INF] User profile is available. Using 'C:\Users\AbhinavArora\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-29 13:24:27.383 +05:30 [INF] Now listening on: http://localhost:5047
+2025-07-29 13:24:27.471 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-29 13:24:27.474 +05:30 [INF] Hosting environment: Development
+2025-07-29 13:24:27.477 +05:30 [INF] Content root path: C:\LnD.Abhinav.HRM5724.Backend\CT.LnD.ContactManagement.Backend\src\Hosting\CT.LnD.ContactManagement.Backend.Hosting.Asp
+2025-07-29 13:24:27.829 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5047/health - null null
+2025-07-29 13:24:30.475 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-07-29 13:24:30.481 +05:30 [INF] Executing endpoint 'HTTP: GET /health'
+2025-07-29 13:24:30.503 +05:30 [INF] Setting HTTP status code 200.
+2025-07-29 13:24:30.513 +05:30 [INF] Writing value of type '<>f__AnonymousType0`2' as Json.
+2025-07-29 13:24:30.535 +05:30 [INF] Executed endpoint 'HTTP: GET /health'
+2025-07-29 13:24:30.540 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5047/health - 499 null application/json; charset=utf-8 2714.5595ms
+2025-07-29 13:57:28.481 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5047/health - null null
+2025-07-29 13:57:28.647 +05:30 [INF] Executing endpoint 'HTTP: GET /health'
+2025-07-29 13:57:28.652 +05:30 [INF] Setting HTTP status code 200.
+2025-07-29 13:57:28.668 +05:30 [INF] Writing value of type '<>f__AnonymousType0`2' as Json.
+2025-07-29 13:57:28.701 +05:30 [INF] Executed endpoint 'HTTP: GET /health'
+2025-07-29 13:57:28.704 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5047/health - 200 null application/json; charset=utf-8 232.216ms
+2025-07-29 13:57:28.910 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5047/favicon.ico - null null
+2025-07-29 13:57:28.933 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5047/favicon.ico - 404 0 null 22.3851ms
+2025-07-29 13:57:28.943 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5047/favicon.ico, Response status code: 404
+2025-07-29 14:25:42.605 +05:30 [INF] User profile is available. Using 'C:\Users\AbhinavArora\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-29 14:25:42.861 +05:30 [INF] Initialized Scheduler Signaller of type: Quartz.Core.SchedulerSignalerImpl
+2025-07-29 14:25:42.866 +05:30 [INF] Quartz Scheduler created
+2025-07-29 14:25:42.871 +05:30 [INF] JobFactory set to: Quartz.Simpl.MicrosoftDependencyInjectionJobFactory
+2025-07-29 14:25:42.876 +05:30 [INF] RAMJobStore initialized.
+2025-07-29 14:25:42.881 +05:30 [INF] Quartz Scheduler 3.14.0.0 - 'QuartzScheduler' with instanceId 'NON_CLUSTERED' initialized
+2025-07-29 14:25:42.886 +05:30 [INF] Using thread pool 'Quartz.Simpl.DefaultThreadPool', size: 10
+2025-07-29 14:25:42.890 +05:30 [INF] Using job store 'Quartz.Simpl.RAMJobStore', supports persistence: False, clustered: False
+2025-07-29 14:25:42.913 +05:30 [INF] Adding 0 jobs, 0 triggers.
+2025-07-29 14:25:43.115 +05:30 [INF] Now listening on: http://localhost:5047
+2025-07-29 14:25:43.217 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-29 14:25:43.221 +05:30 [INF] Hosting environment: Development
+2025-07-29 14:25:43.225 +05:30 [INF] Scheduler QuartzScheduler_$_NON_CLUSTERED started.
+2025-07-29 14:25:43.227 +05:30 [INF] Content root path: C:\LnD.Abhinav.HRM5724.Backend\CT.LnD.ContactManagement.Backend\src\Hosting\CT.LnD.ContactManagement.Backend.Hosting.Asp
+2025-07-29 14:25:44.521 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5047/health - null null
+2025-07-29 14:25:45.117 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-07-29 14:25:45.129 +05:30 [INF] Executing endpoint 'HTTP: GET /health'
+2025-07-29 14:25:45.160 +05:30 [INF] Setting HTTP status code 200.
+2025-07-29 14:25:45.172 +05:30 [INF] Writing value of type '<>f__AnonymousType0`2' as Json.
+2025-07-29 14:25:45.202 +05:30 [INF] Executed endpoint 'HTTP: GET /health'
+2025-07-29 14:25:45.236 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5047/health - 200 null application/json; charset=utf-8 719.1823ms

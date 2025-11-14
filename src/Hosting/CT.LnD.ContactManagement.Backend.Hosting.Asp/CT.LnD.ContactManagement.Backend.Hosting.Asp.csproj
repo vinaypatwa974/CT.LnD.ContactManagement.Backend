@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <None Remove="Utility\3r5uv24n.xrm~" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="9.0.7" />
+      <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.3.0" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.7" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.7">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+      <PackageReference Include="Microsoft.Extensions.Logging" Version="9.0.7" />
+      <PackageReference Include="Swashbuckle.AspNetCore" Version="9.0.3" />
+      <PackageReference Include="Swashbuckle.AspNetCore.Filters" Version="9.0.0" />
+      <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="9.0.3" />
+      <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="9.0.3" />
+      <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="9.0.3" />
+    </ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\CT.LnD.ContactManagement.Backend.Buisness\CT.LnD.ContactManagement.Backend.Business.csproj" />
+		<ProjectReference Include="..\..\DataAccess\CT.LnD.ContactManagement.Backend.DataAccess.Database\CT.LnD.ContactManagement.Backend.DataAccess.Database.csproj" />
+	</ItemGroup>
+
+    <PropertyGroup>
+      <GenerateDocumentationFile>true</GenerateDocumentationFile>
+      <NoWarn>$(NoWarn);1591</NoWarn>
+      <UserSecretsId>64608a3b-6e75-4674-ab6c-d63c8b47e842</UserSecretsId>
+    </PropertyGroup>
+</Project>

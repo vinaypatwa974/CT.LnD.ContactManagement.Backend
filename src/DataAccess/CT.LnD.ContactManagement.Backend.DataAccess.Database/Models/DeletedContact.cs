@@ -1,0 +1,16 @@
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace CT.LnD.ContactManagement.Backend.DataAccess.Database.Models
+{
+    public class DeletedContact
+    {
+        [Key]
+        public int Id { get; set; }
+
+        public int ContactId { get; set; }
+
+        public Contact Contact { get; set; }
+
+
+    }
+}
